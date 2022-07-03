@@ -20,7 +20,6 @@ body {
 
 /* navbar style */
 header {
-    height: 100vh;
     background-image: url('./images/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,6 +31,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 80px;
 }
 
 nav ul {
@@ -54,4 +54,54 @@ nav>ul>li a {
 nav>ul>li:hover a {
     color: #F2B84B;
     transition: color .5s ease;
+}
+
+/* banner style */
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: calc(100vh - 80px);
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.banner-text h1 {
+    color: white;
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.banner-text p {
+    color: white;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.primary-button {
+    color: white;
+    background-image: linear-gradient(90deg, #e7ad41, #ee7b38);
+    padding: 15px;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 15px;
+}
+
+.primary-button:hover {
+    background-image: linear-gradient(90deg, #ee7b38, #e7ad41);
+}
+
+.banner-img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.banner-img img {
+    width: 100%;
 }
