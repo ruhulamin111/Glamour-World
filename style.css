@@ -1,0 +1,57 @@
+/* style utilities */
+
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Gantari', sans-serif;
+}
+
+/* page setup */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* navbar style */
+header {
+    height: 100vh;
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .7);
+    background-blend-mode: overlay;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav>ul li {
+    list-style: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+nav>ul>li a {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    color: white;
+}
+
+nav>ul>li:hover a {
+    color: #F2B84B;
+    transition: color .5s ease;
+}
