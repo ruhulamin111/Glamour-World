@@ -189,3 +189,14 @@ nav>ul>li:hover a {
     font: inherit;
     outline: 0;
 }
+
+/* footer part */
+footer {
+    background-color: #4b3c3c;
+}
+
+footer div {
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
