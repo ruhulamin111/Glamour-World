@@ -124,6 +124,7 @@ nav>ul>li:hover a {
 .card {
     width: 400px;
     box-sizing: border-box;
+    padding: 5px;
     object-fit: cover;
     box-shadow: 2px 2px 20px rgba(128, 128, 128, 0.21);
 }
@@ -142,4 +143,49 @@ nav>ul>li:hover a {
 .card-info p {
     margin: 10px 0;
     text-align: justify;
+}
+
+/* gallery style */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.photo {
+    object-fit: cover;
+    width: 100%;
+    border: 2px solid #e7ad41;
+}
+
+.photo img {
+    width: 100%;
+}
+
+/* contact style */
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info img {
+    width: 50%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-field {
+    padding: 10px;
+    margin: 10px;
+    font: inherit;
+    outline: 0;
 }
