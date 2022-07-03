@@ -115,9 +115,17 @@ nav>ul>li:hover a {
     margin: 50px 0;
 }
 
+.feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
 .card {
     width: 400px;
+    box-sizing: border-box;
     object-fit: cover;
+    box-shadow: 2px 2px 20px rgba(128, 128, 128, 0.21);
 }
 
 .card-img img {
@@ -134,11 +142,4 @@ nav>ul>li:hover a {
 .card-info p {
     margin: 10px 0;
     text-align: justify;
-
-}
-
-.feature {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
 }
